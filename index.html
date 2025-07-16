@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('SW registered', reg))
+        .catch(err => console.error('SW registration failed', err));
+    }
+    </script>
+	<link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="min-height: 150%;">
+    <header>
+        <div style="margin: 10px;">
+            <img src="img/home.png" alt="home" height="120px">
+        </div>
+        
+        <h1>Добро пожаловать на главную страницу!</h1>
+    </header>
+
+    <div style="display: flex; justify-content: center; height: 60vh;">
+        <nav class="left">
+            <a href="index.html">На главную</a>
+            <a href="form.html">Отзывы</a>
+            <a href="aboutpage.html">О нас</a>
+            <a href="cats.html">Коты</a>
+            <a href="dogs.html">Собаки</a>
+        </nav>
+ 
+        <main class="right" style="height: 170%;">
+            <h1>Наши домашние животные:</h1>
+            <ul>
+                <li>
+                    <div>
+                        <h2 style="margin: 0; text-align: center;">Бурмилла длинношёрстный</h2>
+                        <img src="img/cat1.jpeg" alt="" height="200px">
+                    </div>
+                    <p>Бурмилла (англ. Burmilla) — порода кошек, появившаяся в 1981 году в результате случайной вязки бурманской кошки лилового окраса и персидского кота окраса шиншилла. Название породы происходит от слов Бурма + Шиншилла. Другое название породы — бурманская серебристая.</p>
+                </li>
+                <li>
+                    <div>
+                        <h2 style="margin: 0; text-align: center;">Гавана </h2>
+                        <img src="img/cat2.jpg" alt="" height="200px">
+                    </div>
+                    <p>Гавана — порода домашних кошек. <br> <br>Гавана имеет очень характерную форму головы: длинную и узкую, с прямым профилем, миндалевидными глазами и большими, разведёнными в стороны ушами</p>
+                </li>
+                <li>
+                    <div>
+                        <h2 style="margin: 0; text-align: center;">Мейн-кун</h2>
+                        <img src="img/cat3.jpg" alt="" height="250px">
+                    </div>
+                    <p>Мейн-кун (англ. Maine Coon) — порода кошек, которая произошла от кошек штата Мэн на северо-востоке США. Аборигенная порода кошек Северной Америки. Название «мейн-кун» является производным от двух слов. Первое — это название штата Мэн, а второе — производное от англ. raccoon, которое переводится как «енот». Старейшая американская порода кошек</p>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <footer>
+        <img src="img/call.png" alt="" height="100px">
+        <div style="margin: auto 20px;">
+            <h2>Обратная связь</h2>
+            <p>ООО "ЗооМаг"</p>
+            <p>+7 (909) 999 52-29</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
